@@ -15,11 +15,34 @@
         <title>Document</title>
     </head>
     <body>
+        <div class="mfp-hide">
+            <div class="container m-2 mx-auto" id="speaker_content_205">
+                <div class="grid grid-cols-1 bg-white bg-cover lg:grid-cols-12 mfp-with-anim mfp-author" style="background-image: url('assets/backgrounds/bg_8.png')">
+                    <img src="https://kolkatalitmeet.in/2022/jklm/wp-content/uploads/2022/03/Lavanya-Karthik.jpg" class="object-cover w-full h-full col-span-1 lg:col-span-5" alt="" />
+                    <div class="col-span-1 px-8 lg:col-span-7 py-14 bg-[#e3e0d7]">
+                        <h2 class="title t_u">Abhijit V. Banerjee</h2>
+
+                        <p>
+                            Abhijit V. Banerjee, winner of the Nobel Prize in Economics 2019, is the Ford Foundation International Professor of Economics at the Massachusetts Institute of Technology. Banerjee shared the 2019 Nobel Memorial Prized in
+                            Economic Sciences with Esther Duflo and Michael Kremer. He is a co-founder of Abdul Latif Jameel Poverty Action Lab (along with economists Esther Duflo and Sendhil Mullainahan). He is the co-author of Poor Economics. His
+                            book, Good Economics for Hard Times, co-authored with Esther Duflo, was released in October 2019 in India by Juggernaut Books. His latest book is Cooking To Save Your Life.
+                        </p>
+
+                        <h2 class="title t_u">Attending Session</h2>
+                        <p>
+                            <span class="date">March 24, 2022 ● 9.30 am</span><br />
+                            <em>The Boy Who Played with Light - Satyajit Ray (Online)</em> - <span style="font-weight: 400">Lavanya Karthik&nbsp;(Online)&nbsp;</span>
+                        </p>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close !text-color-2">×</button>
+                </div>
+            </div>
+        </div>
         <!-- header -->
         <header class="container flex items-center justify-between px-4 py-4 mx-auto">
-            <a href=""> <img src="assets/logo/logo.png" alt="logo" class="max-w-[170px]" /></a>
+            <a href=""> <img src="assets/logo/logo.png" alt="logo" class="max-w-[150px] sm:max-w-[170px]" /></a>
             <div class="flex items-center gap-4 lg:gap-8">
-                <button class="flex gap-2 items-end menu-btn lg:hidden">
+                <button class="flex items-end gap-2 menu-btn lg:hidden">
                     <p class="font-bold text-color-2 uppercase leading-[10px]">Menu</p>
                     <div class="space-y-2">
                         <div class="ml-auto w-6 h-0.5 bg-color-2"></div>
@@ -55,18 +78,18 @@
 
                 <!-- mobile menu -->
                 <nav class="mobile-menu overlay main-menu">
-                    <ul class="bg-opacity-95 bg-color-2">
+                    <ul class="bg-opacity-90 bg-color-2">
                         <li class="">
-                            <a class="relative text-2xl text-white" href=""> HOME </a>
+                            <a class="relative text-2xl text-white" data-scroll href="#"> Home </a>
                         </li>
                         <li>
-                            <a class="relative text-2xl text-white" href="#schedule-section"> Schedule </a>
+                            <a class="relative text-2xl text-white" data-scroll href="#schedule-section"> Schedule </a>
                         </li>
                         <li>
-                            <a class="relative text-2xl text-white" href="#speaker-section">Speakers </a>
+                            <a class="relative text-2xl text-white" data-scroll href="#speaker-section">Speakers </a>
                         </li>
                         <li>
-                            <a class="relative text-2xl text-white" href="#sponsor-section"> Sponsors </a>
+                            <a class="relative text-2xl text-white" data-scroll href="#sponsor-section"> Sponsors </a>
                         </li>
                         <li class="relative group">
                             <a data-scroll data-dropdown="true" class="relative text-2xl text-white" href="#"> Past Events </a>
@@ -101,24 +124,24 @@
 
             <!-- counter section -->
             <div class="bg-[#1c001b] lg:bg-opacity-80 p-5 lg:absolute bottom-0 z-20 w-full">
-                <div class="container flex gap-4 lg:flex-row flex-col items-center justify-center">
+                <div class="container flex flex-col items-center justify-center gap-4 lg:flex-row">
                     <p class="font-medium text-[28px] text-color-1">Join the event</p>
                     <div class="flex" id="countdown">
-                        <div class="w-24 lg:w-[130px] flex flex-col justify-center items-center lg:gap-2 counter-box">
-                            <span class="flex items-center justify-center text-3xl font-semibold text-center text-color-1 lg:text-[40px] days">44</span>
-                            <span class="text-sm uppercase text-center text-white days-text"> Days </span>
+                        <div class="w-20 lg:w-[130px] flex flex-col justify-center items-center lg:gap-2 counter-box">
+                            <span class="flex items-center justify-center text-2xl font-semibold text-center text-color-1 lg:text-[40px] days">44</span>
+                            <span class="text-xs text-center text-white uppercase days-text"> Days </span>
                         </div>
-                        <div class="w-24 lg:w-[130px] flex flex-col justify-center items-center lg:gap-2 counter-box">
-                            <span class="flex items-center justify-center text-3xl font-semibold text-center text-color-1 lg:text-[40px] hours">12</span>
-                            <span class="text-sm uppercase text-center text-white hours-text"> Hours </span>
+                        <div class="w-20 lg:w-[130px] flex flex-col justify-center items-center lg:gap-2 counter-box">
+                            <span class="flex items-center justify-center text-2xl font-semibold text-center text-color-1 lg:text-[40px] hours">12</span>
+                            <span class="text-xs text-center text-white uppercase hours-text"> Hours </span>
                         </div>
-                        <div class="w-24 lg:w-[130px] flex flex-col justify-center items-center lg:gap-2 counter-box">
-                            <span class="flex items-center justify-center text-3xl font-semibold text-center text-color-1 lg:text-[40px] minutes">15</span>
-                            <span class="text-sm uppercase text-center text-white minutes-text"> Minutes </span>
+                        <div class="w-20 lg:w-[130px] flex flex-col justify-center items-center lg:gap-2 counter-box">
+                            <span class="flex items-center justify-center text-2xl font-semibold text-center text-color-1 lg:text-[40px] minutes">15</span>
+                            <span class="text-xs text-center text-white uppercase minutes-text"> Minutes </span>
                         </div>
-                        <div class="w-24 lg:w-[130px] flex flex-col justify-center items-center lg:gap-2 counter-box">
-                            <span class="flex items-center justify-center text-3xl font-semibold text-center text-color-1 lg:text-[40px] seconds">10</span>
-                            <span class="text-sm uppercase text-center text-white seconds-text"> Seconds </span>
+                        <div class="w-20 lg:w-[130px] flex flex-col justify-center items-center lg:gap-2 counter-box">
+                            <span class="flex items-center justify-center text-2xl font-semibold text-center text-color-1 lg:text-[40px] seconds">10</span>
+                            <span class="text-xs text-center text-white uppercase seconds-text"> Seconds </span>
                         </div>
                     </div>
                 </div>
@@ -129,7 +152,7 @@
 
         <!-- content section -->
         <section class="container my-8 lg:my-16">
-            <div class="grid lg:grid-cols-12 grid-cols-1 items-center gap-4 lg:gap-8">
+            <div class="grid items-center grid-cols-1 gap-4 lg:grid-cols-12 lg:gap-8">
                 <div class="col-span-1 lg:col-span-3 lg:order-2"><img src="assets/images/image_1.png" class="w-full max-w-[250px] mx-auto lg:max-w-none" alt="" /></div>
                 <div class="col-span-1 lg:col-span-9">
                     <p class="text-color-2 lg:text-[19px] lg:leading-[28px]">
@@ -147,9 +170,9 @@
 
         <!-- schedule section -->
         <section class="container my-8 lg:my-16" id="schedule-section">
-            <div class="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-8 mb-8">
+            <div class="flex flex-col items-center justify-center gap-4 mb-8 lg:flex-row lg:gap-8">
                 <h2 class="text-color-1 font-medium text-[28px]">Event Schedule</h2>
-                <div class="flex justify-center items-center rounded-xl overflow-hidden bg-color-3" style="box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1)">
+                <div class="flex items-center justify-center sm:w-[unset] w-full overflow-hidden rounded-xl bg-color-3" style="box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1)">
                     <button class="schedule-day-wrapper" data-tab-button data-tab-target="tab-1">
                         <p>03</p>
                         <p>February</p>
@@ -170,160 +193,159 @@
                     </button>
                 </div>
             </div>
-            <div class="schedule-details flex flex-col gap-8" data-tab-content data-tab-id="tab-1">
-                <div class="flex flex-col lg:flex-row lg:rounded-2xl overflow-hidden lg:gap-0 gap-4">
+            <div class="flex flex-col gap-8 schedule-details" data-tab-content data-tab-id="tab-1">
+                <div class="flex flex-col gap-4 overflow-hidden lg:flex-row lg:rounded-2xl lg:gap-0">
                     <div class="border-[1px] w-full lg:max-w-xs bg-[url('../backgrounds/bg_1.png')] bg-cover bg-no-repeat py-3 px-4 rounded-xl lg:rounded-none lg:px-5 lg:py-12 lg:block flex-wrap flex items-center justify-between">
-                        <p class="flex gap-2 text-color-2 text-lg font-medium items-center lg:mb-2"><img src="assets/icons/icon_1.png" alt="clock" /> 4.30 pm</p>
-                        <p class="flex gap-2 text-color-2 text-lg font-medium items-center"><img src="assets/icons/icon_2.png" alt="clock" /> The Bhubaneswar Club</p>
+                        <p class="flex items-center gap-1 text-sm font-medium sm:gap-2 sm:text-lg text-color-2 lg:mb-2"><img class="sm:w-[unset] w-5" src="assets/icons/icon_1.png" alt="clock" /> 4.30 pm</p>
+                        <p class="flex items-center gap-1 text-sm font-medium sm:gap-2 sm:text-lg text-color-2"><img class="sm:w-[unset] w-5" src="assets/icons/icon_2.png" alt="clock" /> The Bhubaneswar Club</p>
                     </div>
                     <div
                         class="grid grid-cols-1 lg:grid-cols-12 px-4 lg:py-0 py-6 lg:px-8 gap-7 lg:gap-5 border-[1px] lg:border-l-0 lg:border-t-[1px] lg:border-b-[1px] lg:border-r-[1px] border-dashed border-color-3 rounded-xl lg:rounded-l-none lg:rounded-r-3xl w-full"
                     >
                         <div class="col-span-1 lg:col-span-7 lg:py-12">
-                            <div class="flex gap-2 lg:gap-4 items-center mb-1 flex-wrap">
-                                <h4 class="font-bold text-lg uppercase">INAUGURATION</h4>
+                            <div class="flex flex-wrap items-center gap-2 mb-1">
+                                <h4 class="text-base font-bold uppercase sm:text-lg">INAUGURATION</h4>
                                 <div class="live-blink">Live</div>
                                 <a class="live-blink">View Session</a>
                             </div>
-                            <p class="text-lg">Ramakanta Rath with Soumya Ranjan Patnaik</p>
+                            <p class="text-base sm:text-lg">Ramakanta Rath with Soumya Ranjan Patnaik</p>
                         </div>
-                        <div class="col-span-1 lg:col-span-5 flex lg:justify-center flex-wrap gap-6 lg:py-8">
+                        <div class="flex flex-wrap col-span-1 gap-6 lg:col-span-5 lg:justify-center lg:py-8">
                             <div class="flex flex-col gap-2 w-full max-w-[120px]">
                                 <a>
                                     <img src="assets/images/image_2.png" class="h-[74] w-[70] rounded-md mx-auto" alt="author" />
                                 </a>
-                                <p class="text-center">Ramakanta asdf Rath</p>
+                                <p class="text-sm text-center sm:text-base">Ramakanta asdf Rath</p>
                             </div>
                             <div class="flex flex-col gap-2 w-full max-w-[120px]">
                                 <a>
                                     <img src="assets/images/image_2.png" class="h-[74] w-[70] rounded-md mx-auto" alt="author" />
                                 </a>
-                                <p class="text-center">Ramakanta Rath</p>
+                                <p class="text-sm text-center sm:text-base">Ramakanta Rath</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row lg:rounded-2xl overflow-hidden lg:gap-0 gap-4">
+                <div class="flex flex-col gap-4 overflow-hidden lg:flex-row lg:rounded-2xl lg:gap-0">
                     <div class="border-[1px] w-full lg:max-w-xs bg-[url('../backgrounds/bg_1.png')] bg-cover bg-no-repeat py-3 px-4 rounded-xl lg:rounded-none lg:px-5 lg:py-12 lg:block flex-wrap flex items-center justify-between">
-                        <p class="flex gap-2 text-color-2 text-lg font-medium items-center lg:mb-2"><img src="assets/icons/icon_1.png" alt="clock" /> 4.30 pm</p>
-                        <p class="flex gap-2 text-color-2 text-lg font-medium items-center"><img src="assets/icons/icon_2.png" alt="clock" /> The Bhubaneswar Club</p>
+                        <p class="flex items-center gap-1 text-sm font-medium sm:gap-2 sm:text-lg text-color-2 lg:mb-2"><img class="sm:w-[unset] w-5" src="assets/icons/icon_1.png" alt="clock" /> 4.30 pm</p>
+                        <p class="flex items-center gap-1 text-sm font-medium sm:gap-2 sm:text-lg text-color-2"><img class="sm:w-[unset] w-5" src="assets/icons/icon_2.png" alt="clock" /> The Bhubaneswar Club</p>
                     </div>
                     <div
                         class="grid grid-cols-1 lg:grid-cols-12 px-4 lg:py-0 py-6 lg:px-8 gap-7 lg:gap-5 border-[1px] lg:border-l-0 lg:border-t-[1px] lg:border-b-[1px] lg:border-r-[1px] border-dashed border-color-3 rounded-xl lg:rounded-l-none lg:rounded-r-3xl w-full"
                     >
                         <div class="col-span-1 lg:col-span-7 lg:py-12">
-                            <div class="flex gap-2 lg:gap-4 items-center mb-1 flex-wrap">
-                                <h4 class="font-bold text-lg uppercase">INAUGURATION</h4>
-                                <div class="live-blink">Live</div>
+                            <div class="flex flex-wrap items-center gap-2 mb-1">
+                                <h4 class="text-base font-bold uppercase sm:text-lg">INAUGURATION</h4>
                                 <a class="live-blink">View Session</a>
                             </div>
-                            <p class="text-lg">Ramakanta Rath with Soumya Ranjan Patnaik 2</p>
+                            <p class="text-base sm:text-lg">Ramakanta Rath with Soumya Ranjan Patnaik 2</p>
                         </div>
-                        <div class="col-span-1 lg:col-span-5 flex lg:justify-center flex-wrap gap-6 lg:py-8">
+                        <div class="flex flex-wrap col-span-1 gap-6 lg:col-span-5 lg:justify-center lg:py-8">
                             <div class="flex flex-col gap-2 w-full max-w-[120px]">
                                 <a>
                                     <img src="assets/images/image_2.png" class="h-[74] w-[70] rounded-md mx-auto" alt="author" />
                                 </a>
-                                <p class="text-center">Ramakanta asdf Rath</p>
+                                <p class="text-sm text-center sm:text-base">Ramakanta asdf Rath</p>
                             </div>
                             <div class="flex flex-col gap-2 w-full max-w-[120px]">
                                 <a>
                                     <img src="assets/images/image_2.png" class="h-[74] w-[70] rounded-md mx-auto" alt="author" />
                                 </a>
-                                <p class="text-center">Ramakanta Rath</p>
+                                <p class="text-sm text-center sm:text-base">Ramakanta Rath</p>
                             </div>
                             <div class="flex flex-col gap-2 w-full max-w-[120px]">
                                 <a>
                                     <img src="assets/images/image_2.png" class="h-[74] w-[70] rounded-md mx-auto" alt="author" />
                                 </a>
-                                <p class="text-center">Ramakanta Rath</p>
+                                <p class="text-sm text-center sm:text-base">Ramakanta Rath</p>
                             </div>
                             <div class="flex flex-col gap-2 w-full max-w-[120px]">
                                 <a>
                                     <img src="assets/images/image_2.png" class="h-[74] w-[70] rounded-md mx-auto" alt="author" />
                                 </a>
-                                <p class="text-center">Ramakanta Rath</p>
+                                <p class="text-sm text-center sm:text-base">Ramakanta Rath</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="schedule-details flex flex-col gap-8" data-tab-content data-tab-id="tab-2">
-                <div class="flex flex-col lg:flex-row lg:rounded-2xl overflow-hidden lg:gap-0 gap-4">
+            <div class="flex flex-col gap-8 schedule-details" data-tab-content data-tab-id="tab-2">
+                <div class="flex flex-col gap-4 overflow-hidden lg:flex-row lg:rounded-2xl lg:gap-0">
                     <div class="border-[1px] w-full lg:max-w-xs bg-[url('../backgrounds/bg_1.png')] bg-cover bg-no-repeat py-3 px-4 rounded-xl lg:rounded-none lg:px-5 lg:py-12 lg:block flex-wrap flex items-center justify-between">
-                        <p class="flex gap-2 text-color-2 text-lg font-medium items-center lg:mb-2"><img src="assets/icons/icon_1.png" alt="clock" /> 4.30 pm</p>
-                        <p class="flex gap-2 text-color-2 text-lg font-medium items-center"><img src="assets/icons/icon_2.png" alt="clock" /> The Bhubaneswar Club</p>
+                        <p class="flex items-center gap-1 text-sm font-medium sm:gap-2 sm:text-lg text-color-2 lg:mb-2"><img src="assets/icons/icon_1.png" alt="clock" /> 4.30 pm</p>
+                        <p class="flex items-center gap-1 text-sm font-medium sm:gap-2 sm:text-lg text-color-2"><img src="assets/icons/icon_2.png" alt="clock" /> The Bhubaneswar Club</p>
                     </div>
                     <div
                         class="grid grid-cols-1 lg:grid-cols-12 px-4 lg:py-0 py-6 lg:px-8 gap-7 lg:gap-5 border-[1px] lg:border-l-0 lg:border-t-[1px] lg:border-b-[1px] lg:border-r-[1px] border-dashed border-color-3 rounded-xl lg:rounded-l-none lg:rounded-r-3xl w-full"
                     >
                         <div class="col-span-1 lg:col-span-7 lg:py-12">
-                            <div class="flex gap-2 lg:gap-4 items-center mb-1 flex-wrap">
-                                <h4 class="font-bold text-lg uppercase">INAUGURATION</h4>
+                            <div class="flex flex-wrap items-center gap-2 mb-1">
+                                <h4 class="text-base font-bold uppercase sm:text-lg">INAUGURATION</h4>
                                 <div class="live-blink">Live</div>
                                 <a class="live-blink">View Session</a>
                             </div>
-                            <p class="text-lg">Ramakanta Rath with Soumya Ranjan Patnaik</p>
+                            <p class="text-base sm:text-lg">Ramakanta Rath with Soumya Ranjan Patnaik</p>
                         </div>
-                        <div class="col-span-1 lg:col-span-5 flex lg:justify-center flex-wrap gap-6 lg:py-8">
+                        <div class="flex flex-wrap col-span-1 gap-6 lg:col-span-5 lg:justify-center lg:py-8">
                             <div class="flex flex-col gap-2 w-full max-w-[120px]">
                                 <a>
                                     <img src="assets/images/image_2.png" class="h-[74] w-[70] rounded-md mx-auto" alt="author" />
                                 </a>
-                                <p class="text-center">Ramakanta asdf Rath</p>
+                                <p class="text-sm text-center sm:text-base">Ramakanta asdf Rath</p>
                             </div>
                             <div class="flex flex-col gap-2 w-full max-w-[120px]">
                                 <a>
                                     <img src="assets/images/image_2.png" class="h-[74] w-[70] rounded-md mx-auto" alt="author" />
                                 </a>
-                                <p class="text-center">Ramakanta Rath</p>
+                                <p class="text-sm text-center sm:text-base">Ramakanta Rath</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row lg:rounded-2xl overflow-hidden lg:gap-0 gap-4">
+                <div class="flex flex-col gap-4 overflow-hidden lg:flex-row lg:rounded-2xl lg:gap-0">
                     <div class="border-[1px] w-full lg:max-w-xs bg-[url('../backgrounds/bg_1.png')] bg-cover bg-no-repeat py-3 px-4 rounded-xl lg:rounded-none lg:px-5 lg:py-12 lg:block flex-wrap flex items-center justify-between">
-                        <p class="flex gap-2 text-color-2 text-lg font-medium items-center lg:mb-2"><img src="assets/icons/icon_1.png" alt="clock" /> 4.30 pm</p>
-                        <p class="flex gap-2 text-color-2 text-lg font-medium items-center"><img src="assets/icons/icon_2.png" alt="clock" /> The Bhubaneswar Club</p>
+                        <p class="flex items-center gap-1 text-sm font-medium sm:gap-2 sm:text-lg text-color-2 lg:mb-2"><img src="assets/icons/icon_1.png" alt="clock" /> 4.30 pm</p>
+                        <p class="flex items-center gap-1 text-sm font-medium sm:gap-2 sm:text-lg text-color-2"><img src="assets/icons/icon_2.png" alt="clock" /> The Bhubaneswar Club</p>
                     </div>
                     <div
                         class="grid grid-cols-1 lg:grid-cols-12 px-4 lg:py-0 py-6 lg:px-8 gap-7 lg:gap-5 border-[1px] lg:border-l-0 lg:border-t-[1px] lg:border-b-[1px] lg:border-r-[1px] border-dashed border-color-3 rounded-xl lg:rounded-l-none lg:rounded-r-3xl w-full"
                     >
                         <div class="col-span-1 lg:col-span-7 lg:py-12">
-                            <div class="flex gap-2 lg:gap-4 items-center mb-1 flex-wrap">
-                                <h4 class="font-bold text-lg uppercase">INAUGURATION 2</h4>
+                            <div class="flex flex-wrap items-center gap-2 mb-1">
+                                <h4 class="text-base font-bold uppercase sm:text-lg">INAUGURATION 2</h4>
                                 <div class="live-blink">Live</div>
                                 <a class="live-blink">View Session</a>
                             </div>
-                            <p class="text-lg">Ramakanta Rath with Soumya Ranjan Patnaik 2</p>
+                            <p class="text-base sm:text-lg">Ramakanta Rath with Soumya Ranjan Patnaik 2</p>
                         </div>
-                        <div class="col-span-1 lg:col-span-5 flex lg:justify-center flex-wrap gap-6 lg:py-8">
+                        <div class="flex flex-wrap col-span-1 gap-6 lg:col-span-5 lg:justify-center lg:py-8">
                             <div class="flex flex-col gap-2 w-full max-w-[120px]">
                                 <a>
                                     <img src="assets/images/image_2.png" class="h-[74] w-[70] rounded-md mx-auto" alt="author" />
                                 </a>
-                                <p class="text-center">Ramakanta asdf Rath</p>
+                                <p class="text-sm text-center sm:text-base">Ramakanta asdf Rath</p>
                             </div>
                             <div class="flex flex-col gap-2 w-full max-w-[120px]">
                                 <a>
                                     <img src="assets/images/image_2.png" class="h-[74] w-[70] rounded-md mx-auto" alt="author" />
                                 </a>
-                                <p class="text-center">Ramakanta Rath</p>
+                                <p class="text-sm text-center sm:text-base">Ramakanta Rath</p>
                             </div>
                             <div class="flex flex-col gap-2 w-full max-w-[120px]">
                                 <a>
                                     <img src="assets/images/image_2.png" class="h-[74] w-[70] rounded-md mx-auto" alt="author" />
                                 </a>
-                                <p class="text-center">Ramakanta Rath</p>
+                                <p class="text-sm text-center sm:text-base">Ramakanta Rath</p>
                             </div>
                             <div class="flex flex-col gap-2 w-full max-w-[120px]">
                                 <a>
                                     <img src="assets/images/image_2.png" class="h-[74] w-[70] rounded-md mx-auto" alt="author" />
                                 </a>
-                                <p class="text-center">Ramakanta Rath</p>
+                                <p class="text-sm text-center sm:text-base">Ramakanta Rath</p>
                             </div>
                         </div>
                     </div>
@@ -336,29 +358,36 @@
         <section class="container my-8 lg:my-16" id="speaker-section">
             <h2 class="text-color-1 font-medium text-[28px] text-center mb-8">Speakers</h2>
             <div class="w-full grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 justify-center px-4 py-8 lg:py-16 bg-center rounded-2xl bg-cover mb-8 bg-[url('../backgrounds/bg_2.png')] bg-color-3">
-                <div class="col-span-1 flex flex-col gap-4">
-                    <a><img src="assets/images/image_3.png" class="rounded-full mx-auto lg:w-[140px] w-[120px]" alt="speaker" /></a>
-                    <p class="font-bold text-color-2 text-base lg:text-lg uppercase text-center">ABIJIT GANGULY</p>
+                <div class="flex flex-col col-span-1 gap-4">
+                    <a href="#speaker_content_205" class="speaker-popup group">
+                        <div class="relative rounded-full mx-auto lg:w-[140px] w-[120px] overflow-hidden">
+                            <img src="assets/images/image_3.png" alt="speaker" />
+                            <div class="absolute top-0 left-0 bottom-0 right-0 bg-[#480047] hover:opacity-[67%] opacity-0 flex justify-center items-center">
+                                <div class="w-10 h-10 rounded-full border-[1px] border-dashed border-white flex justify-center items-center text-white text-4xl">+</div>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="text-sm font-bold text-center uppercase sm:text-base text-color-2 lg:text-lg">ABIJIT GANGULY</p>
                 </div>
-                <div class="col-span-1 flex flex-col gap-4">
+                <div class="flex flex-col col-span-1 gap-4">
                     <a><img src="assets/images/image_3.png" class="rounded-full mx-auto lg:w-[140px] w-[120px]" alt="speaker" /></a>
-                    <p class="font-bold text-color-2 text-base lg:text-lg uppercase text-center">ABIJIT GANGULY</p>
+                    <p class="text-sm font-bold text-center uppercase sm:text-base text-color-2 lg:text-lg">ABIJIT GANGULY</p>
                 </div>
-                <div class="col-span-1 flex flex-col gap-4">
+                <div class="flex flex-col col-span-1 gap-4">
                     <a><img src="assets/images/image_3.png" class="rounded-full mx-auto lg:w-[140px] w-[120px]" alt="speaker" /></a>
-                    <p class="font-bold text-color-2 text-base lg:text-lg uppercase text-center">ABIJIT GANGULY</p>
+                    <p class="text-sm font-bold text-center uppercase sm:text-base text-color-2 lg:text-lg">ABIJIT GANGULY</p>
                 </div>
-                <div class="col-span-1 flex flex-col gap-4">
+                <div class="flex flex-col col-span-1 gap-4">
                     <a><img src="assets/images/image_3.png" class="rounded-full mx-auto lg:w-[140px] w-[120px]" alt="speaker" /></a>
-                    <p class="font-bold text-color-2 text-base lg:text-lg uppercase text-center">ABIJIT GANGULY</p>
+                    <p class="text-sm font-bold text-center uppercase sm:text-base text-color-2 lg:text-lg">ABIJIT GANGULY</p>
                 </div>
-                <div class="col-span-1 flex flex-col gap-4">
+                <div class="flex flex-col col-span-1 gap-4">
                     <a><img src="assets/images/image_3.png" class="rounded-full mx-auto lg:w-[140px] w-[120px]" alt="speaker" /></a>
-                    <p class="font-bold text-color-2 text-base lg:text-lg uppercase text-center">ABIJIT GANGULY</p>
+                    <p class="text-sm font-bold text-center uppercase sm:text-base text-color-2 lg:text-lg">ABIJIT GANGULY</p>
                 </div>
-                <div class="col-span-1 flex flex-col gap-4">
+                <div class="flex flex-col col-span-1 gap-4">
                     <a><img src="assets/images/image_3.png" class="rounded-full mx-auto lg:w-[140px] w-[120px]" alt="speaker" /></a>
-                    <p class="font-bold text-color-2 text-base lg:text-lg uppercase text-center">ABIJIT GANGULY</p>
+                    <p class="text-sm font-bold text-center uppercase sm:text-base text-color-2 lg:text-lg">ABIJIT GANGULY</p>
                 </div>
             </div>
             <div class="flex justify-center"><button class="rounded border-[1px] border-dashed border-color-2 text-color-2 py-2 px-6 font-bold uppercase">Load More</button></div>
@@ -367,18 +396,18 @@
 
         <!-- venue section -->
         <section class="container my-8 lg:my-16">
-            <h2 class="text-color-1 font-medium text-[28px] text-center mb-2">Venue Details</h2>
-            <h3 class="text-color-2 font-medium text-lg text-center mb-10">Get Directions</h3>
-            <div class="flex justify-center flex-wrap gap-16 mb-10">
+            <h2 class="text-color-1 font-medium text-[28px] text-center lg:mb-2">Venue Details</h2>
+            <h3 class="mb-8 text-lg font-medium text-center lg:mb-10 text-color-2">Get Directions</h3>
+            <div class="flex flex-wrap justify-center gap-4 mb-5 lg:mb-10 lg:gap-16">
                 <button data-location-tab-button data-location-tab-target="location-1">
-                    <p class="text-color-2 font-bold text-lg uppercase text-center">VENUE 1</p>
-                    <p class="text-color-2 font-medium text-lg text-center mb-1">Bhubaneswar Club</p>
-                    <a class="flex items-center gap-2 justify-center text-color-1 uppercase font-medium text-lg"> <img src="assets/icons/icon_2.png" alt="" /> Click Here </a>
+                    <p class="text-base font-bold text-center uppercase sm:text-lg text-color-2">VENUE 1</p>
+                    <p class="mb-1 text-base font-medium text-center sm:text-lg text-color-2">Bhubaneswar Club</p>
+                    <a class="flex items-center justify-center gap-1 text-sm font-medium uppercase sm:gap-2 sm:text-lg text-color-2"> <img class="sm:w-[unset] w-5" src="assets/icons/icon_2.png" alt="" /> Click Here </a>
                 </button>
                 <button data-location-tab-button data-location-tab-target="location-2">
-                    <p class="text-color-2 font-bold text-lg uppercase text-center">VENUE 1</p>
-                    <p class="text-color-2 font-medium text-lg text-center mb-1">Bhubaneswar Club</p>
-                    <a class="flex items-center gap-2 justify-center text-color-1 uppercase font-medium text-lg"> <img src="assets/icons/icon_2.png" alt="" /> Click Here </a>
+                    <p class="text-base font-bold text-center uppercase sm:text-lg text-color-2">VENUE 1</p>
+                    <p class="mb-1 text-base font-medium text-center sm:text-lg text-color-2">Bhubaneswar Club</p>
+                    <a class="flex items-center justify-center gap-1 text-sm font-medium uppercase sm:gap-2 sm:text-lg text-color-2"> <img class="sm:w-[unset] w-5" src="assets/icons/icon_2.png" alt="" /> Click Here </a>
                 </button>
             </div>
             <iframe
@@ -387,7 +416,7 @@
                 data-location-tab-id="location-1"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7369.832597464263!2d88.342558!3d22.544808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb540e4bce39763!2sVictoria%20Memorial!5e0!3m2!1sen!2sin!4v1672041446249!5m2!1sen!2sin"
                 style="border: 0px; display: block"
-                class="w-full h-full aspect-video max-w-3xl mx-auto"
+                class="w-full h-full max-w-3xl mx-auto aspect-video"
                 width="100%"
                 allowfullscreen=""
                 loading="lazy"
@@ -399,7 +428,7 @@
                 data-location-tab-id="location-2"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7369.832597464263!2d88.342558!3d22.544808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb540e4bce39763!2sVictoria%20Memorial!5e0!3m2!1sen!2sin!4v1672041446249!5m2!1sen!2sin"
                 style="border: 0px; display: block"
-                class="w-full h-full aspect-video max-w-3xl mx-auto"
+                class="w-full h-full max-w-3xl mx-auto aspect-video"
                 width="100%"
                 allowfullscreen=""
                 loading="lazy"
@@ -411,9 +440,9 @@
         <!-- sponsor section -->
         <section class="my-8 lg:my-16" id="sponsor-section">
             <h2 class="text-color-1 font-medium text-[28px] text-center mb-8">Sponsors</h2>
-            <div class="bg-color-5 bg-[url('../backgrounds/bg_3.png')] bg-center bg-cover py-28">
+            <div class="bg-color-5 bg-[url('../backgrounds/bg_3.png')] bg-center bg-cover py-16 lg:py-28">
                 <div class="container max-w-3xl">
-                    <div class="flex flex-wrap items-center justify-center gap-16">
+                    <div class="flex flex-wrap items-center justify-center gap-4 lg:gap-16">
                         <img src="assets/images/image_7.png" alt="" />
                         <img src="assets/images/image_7.png" alt="" />
                         <img src="assets/images/image_7.png" alt="" />
@@ -430,49 +459,49 @@
                     <div class="col-span-1 lg:col-span-2">
                         <img src="assets/images/image_9.png" class="mb-4" alt="gameplan logo" />
                         <h5 class="text-color-1 text-[22px]">Follow Us</h5>
-                        <div class="flex items-center justify-start gap-2 mb-4">
+                        <div class="flex items-center justify-start gap-2">
                             <a href="/"><img src="assets/logo/fb.png" alt="" /></a>
                             <a href="/"><img src="assets/logo/insta.png" alt="" /></a>
                             <a href="/"><img src="assets/logo/twitter.png" alt="" /></a>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 gap-4 lg:gap-8 lg:grid-cols-12 col-span-10">
+                    <div class="grid grid-cols-1 col-span-10 gap-4 gap-y-2 lg:grid-cols-12 lg:gap-8">
                         <div class="col-span-1 lg:col-span-4">
                             <h5 class="text-color-1 text-[22px]">Contact Info</h5>
                             <div>
-                                <h6 class="text-color-2 font-bold uppercase">Phone</h6>
-                                <p class="text-color-2 mb-2">
+                                <h6 class="font-bold uppercase text-color-2">Phone</h6>
+                                <p class="mb-2 text-color-2">
                                     + 91 (0) 33 2282 1960/61 <br />
                                     + 91 (0) 33 3290 4947 <br />
                                     + 91 (0) 33 2282 1959
                                 </p>
-                                <h6 class="text-color-2 font-bold uppercase">Email</h6>
-                                <p class="text-color-2 mb-2">mail@gameplan.co.in</p>
-                                <h6 class="text-color-2 font-bold uppercase">Address</h6>
+                                <h6 class="font-bold uppercase text-color-2">Email</h6>
+                                <p class="mb-2 text-color-2">mail@gameplan.co.in</p>
+                                <h6 class="font-bold uppercase text-color-2">Address</h6>
                                 <p class="text-color-2">19B, Shakespere Sarani, Kolkata 700071,West Bengal, India</p>
                             </div>
                         </div>
                         <div class="col-span-1 lg:col-span-4">
                             <h5 class="text-color-1 text-[22px]">FAQs</h5>
                             <div class="mb-2">
-                                <h6 class="text-color-2 font-bold uppercase">Can anyone attend the event?</h6>
+                                <h6 class="font-bold uppercase text-color-2">Can anyone attend the event?</h6>
                                 <p class="text-color-2">Yes. All are welcome. No mask, no entry.</p>
                             </div>
 
                             <div class="mb-2">
-                                <h6 class="text-color-2 font-bold uppercase">Where all will the events be held?</h6>
+                                <h6 class="font-bold uppercase text-color-2">Where all will the events be held?</h6>
                                 <p class="text-color-2">Victoria Memorial Hall—East Gate Kalam Lawn and Western Quadrangle, Skinny Mo’s Jazz Club, GD Birla Sabhaghar and The Bengal Club. Please check the schedule for specific details.</p>
                             </div>
                         </div>
                         <div class="col-span-1 lg:col-span-4">
                             <h5 class="text-white text-[22px] lg:block hidden">a</h5>
                             <div class="mb-2">
-                                <h6 class="text-color-2 font-bold uppercase">Can anyone attend the event?</h6>
+                                <h6 class="font-bold uppercase text-color-2">Can anyone attend the event?</h6>
                                 <p class="text-color-2">Yes. All are welcome. No mask, no entry.</p>
                             </div>
 
                             <div class="mb-2">
-                                <h6 class="text-color-2 font-bold uppercase">Where all will the events be held?</h6>
+                                <h6 class="font-bold uppercase text-color-2">Where all will the events be held?</h6>
                                 <p class="text-color-2">Victoria Memorial Hall—East Gate Kalam Lawn and Western Quadrangle, Skinny Mo’s Jazz Club, GD Birla Sabhaghar and The Bengal Club. Please check the schedule for specific details.</p>
                             </div>
                         </div>
@@ -497,7 +526,7 @@
             </section>
             <div class="border-t-[1px] border-dashed border-color-3">
                 <div class="container flex items-center justify-center py-4">
-                    <p class="text-sm font-medium text-center text-color-2">
+                    <p class="text-xs font-medium text-center text-color-2">
                         BHUBANESWAR LITERARY MEET IS BEING MANAGED BY GAMEPLAN SPORTS PVT LTD | ALL RIGHTS RESERVED, © 2022 <br />
                         SITE DESIGNED AND MAINTAINED BY ONE BY ONE DESIGN PVT LTD
                     </p>
@@ -607,5 +636,10 @@
                 document.getElementById("demo").innerHTML = "EXPIRED";
             }
         }, 1000);
+
+        $(".speaker-popup").magnificPopup({
+            removalDelay: 500,
+            mainClass: "mfp-zoom-in",
+        });
     </script>
 </html>

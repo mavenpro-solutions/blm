@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 @layer components {
+    a {
+        text-decoration: none;
+    }
     *,
     button {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
         @apply font-dm-sans;
     }
     .speaker-box-shadow {
@@ -41,28 +46,28 @@
     }
 
     .mfp-author .title.t_u {
-        @apply text-xl font-dm-sans text-color-1 font-semibold mb-2 uppercase;
+        @apply text-lg text-color-1 font-bold mb-2 uppercase;
     }
     .mfp-author .title.t_u:first-child {
         @apply mb-2;
     }
     .mfp-author p {
-        @apply text-lg font-dm-sans text-color-4 mb-8;
+        @apply text-lg text-color-2 mb-8;
     }
     .mfp-author .date {
-        @apply text-[22px] font-dm-sans text-color-4 font-medium;
+        @apply text-lg text-color-2 font-medium;
     }
     .faq-wrapper p {
-        @apply font-dm-sans text-color-4 leading-[20px];
+        @apply text-color-2 leading-[20px];
     }
     .schedule-card > p {
-        @apply font-dm-sans text-color-4;
+        @apply text-color-2;
     }
     .counter-box + .counter-box {
         @apply border-dashed border-l-[1px] border-color-3;
     }
     .schedule-day-wrapper {
-        @apply w-[100px] lg:w-[162px] p-4 lg:p-7 flex justify-center items-center flex-col select-none cursor-pointer;
+        @apply w-full sm:w-[100px] lg:w-[162px] p-4 lg:p-7 flex justify-center items-center flex-col select-none cursor-pointer;
     }
     .schedule-day-wrapper {
         box-shadow: inset 2px 0px 5px 0px rgba(0, 0, 0, 0.1);
@@ -106,7 +111,7 @@
     }
 
     .live-blink {
-        @apply lg:text-base rounded text-sm px-2 border-2 font-bold border-red-600 text-red-600  relative border-solid;
+        @apply rounded text-xs sm:text-sm px-2 border-2 font-bold border-red-600 text-red-600  relative border-solid;
     }
     a.live-blink {
         @apply hover:bg-red-100;
@@ -130,6 +135,9 @@
         50% {
             opacity: 0;
         }
+    }
+    [data-location-tab-button].active > a {
+        @apply text-color-1;
     }
 }
 

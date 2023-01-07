@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    *,
+    button {
+        @apply font-dm-sans;
+    }
+    .speaker-box-shadow {
+        box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .box-shadow {
+        box-shadow: 0px 1px 50px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-shadow {
+        text-shadow: 1.5px 2.598px 6px rgb(0, 0, 0);
+        -moz-transform: matrix(1.26468617798377, 0, 0, 1.26468617798377, 0, 0);
+        -webkit-transform: matrix(1.26468617798377, 0, 0, 1.26468617798377, 0, 0);
+        -ms-transform: matrix(1.26468617798377, 0, 0, 1.26468617798377, 0, 0);
+    }
+
+    .mobile-menu {
+        visibility: hidden;
+        @apply bg-opacity-0 fixed  top-0 left-0 z-20 w-full h-screen transition-all duration-200 ease-in-out bg-black lg:hidden select-none;
+    }
+
+    .mobile-menu ul {
+        @apply flex flex-col items-center justify-center h-full gap-8 transition-all duration-200 ease-in-out w-80 -translate-x-80;
+    }
+
+    .open-menu .mobile-menu {
+        visibility: visible;
+        @apply bg-opacity-50 select-auto;
+    }
+
+    .open-menu ul {
+        @apply -translate-x-0;
+    }
+
+    .mfp-author .title.t_u {
+        @apply text-xl font-dm-sans text-color-1 font-semibold mb-2 uppercase;
+    }
+    .mfp-author .title.t_u:first-child {
+        @apply mb-2;
+    }
+    .mfp-author p {
+        @apply text-lg font-dm-sans text-color-4 mb-8;
+    }
+    .mfp-author .date {
+        @apply text-[22px] font-dm-sans text-color-4 font-medium;
+    }
+    .faq-wrapper p {
+        @apply font-dm-sans text-color-4 leading-[20px];
+    }
+    .schedule-card > p {
+        @apply font-dm-sans text-color-4;
+    }
+    .counter-box + .counter-box {
+        @apply border-dashed border-l-[1px] border-color-3;
+    }
+    .schedule-day-wrapper {
+        @apply w-[100px] lg:w-[162px] p-4 lg:p-7 flex justify-center items-center flex-col select-none cursor-pointer;
+    }
+    .schedule-day-wrapper {
+        box-shadow: inset 2px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+    .schedule-day-wrapper.active {
+        @apply bg-color-1;
+    }
+    .schedule-day-wrapper.active p {
+        @apply text-white;
+    }
+    .schedule-day-wrapper.active hr {
+        border-color: white;
+    }
+    .schedule-day-wrapper:hover {
+        @apply bg-color-1;
+    }
+    .schedule-day-wrapper:hover p {
+        @apply text-white;
+    }
+    .schedule-day-wrapper:hover hr {
+        border-color: white;
+    }
+    .schedule-day-wrapper p {
+        @apply text-color-2;
+    }
+    .schedule-day-wrapper hr {
+        border: none;
+        border-top: 1.5px dashed #a1a09e;
+        height: 1px;
+        width: 50%;
+        @apply my-2 lg:mt-[12px] lg:mb-[16px];
+    }
+    .schedule-day-wrapper p:first-child {
+        @apply font-bold lg:!leading-none text-3xl lg:text-[50px];
+    }
+    .schedule-day-wrapper p:nth-child(2) {
+        @apply lg:mt-1  lg:text-base text-xs;
+    }
+    .schedule-day-wrapper p:last-child {
+        @apply uppercase text-sm lg:text-lg font-bold;
+    }
+
+    .live-blink {
+        @apply lg:text-base rounded text-sm px-2 border-2 font-bold border-red-600 text-red-600  relative border-solid;
+    }
+    a.live-blink {
+        @apply hover:bg-red-100;
+    }
+    div.live-blink {
+        @apply pr-6;
+    }
+    div.live-blink::before {
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 20px;
+        @apply bg-red-600;
+        top: 50%;
+        right: 8px;
+        transform: translateY(-50%);
+        animation: blinker 1s linear infinite;
+    }
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+}
+
+@layer base {
+    @font-face {
+        font-family: "DM Sans";
+        src: url("../fonts/eot/DMSans-BoldItalic.eot");
+        src: url("../fonts/eot/DMSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/DMSans-BoldItalic.woff2") format("woff2"), url("../fonts/woff/DMSans-BoldItalic.woff") format("woff"),
+            url("../fonts/ttf/DMSans-BoldItalic.ttf") format("truetype"), url("../fonts/svg/DMSans-BoldItalic.svg#DMSans-BoldItalic") format("svg");
+        font-weight: bold;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "DM Sans";
+        src: url("../fonts/eot/DMSans-Medium.eot");
+        src: url("../fonts/eot/DMSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/DMSans-Medium.woff2") format("woff2"), url("../fonts/woff/DMSans-Medium.woff") format("woff"),
+            url("../fonts/ttf/DMSans-Medium.ttf") format("truetype"), url("../fonts/svg/DMSans-Medium.svg#DMSans-Medium") format("svg");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "DM Sans";
+        src: url("../fonts/eot/DMSans-Italic.eot");
+        src: url("../fonts/eot/DMSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/DMSans-Italic.woff2") format("woff2"), url("../fonts/woff/DMSans-Italic.woff") format("woff"),
+            url("../fonts/ttf/DMSans-Italic.ttf") format("truetype"), url("../fonts/svg/DMSans-Italic.svg#DMSans-Italic") format("svg");
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "DM Sans";
+        src: url("../fonts/eot/DMSans-Bold.eot");
+        src: url("../fonts/eot/DMSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/DMSans-Bold.woff2") format("woff2"), url("../fonts/woff/DMSans-Bold.woff") format("woff"), url("../fonts/ttf/DMSans-Bold.ttf") format("truetype"),
+            url("../fonts/svg/DMSans-Bold.svg#DMSans-Bold") format("svg");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "DM Sans";
+        src: url("../fonts/eot/DMSans-Regular.eot");
+        src: url("../fonts/eot/DMSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/DMSans-Regular.woff2") format("woff2"), url("../fonts/woff/DMSans-Regular.woff") format("woff"),
+            url("../fonts/ttf/DMSans-Regular.ttf") format("truetype"), url("../fonts/svg/DMSans-Regular.svg#DMSans-Regular") format("svg");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "DM Sans";
+        src: url("../fonts/eot/DMSans-MediumItalic.eot");
+        src: url("../fonts/eot/DMSans-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/DMSans-MediumItalic.woff2") format("woff2"), url("../fonts/woff/DMSans-MediumItalic.woff") format("woff"),
+            url("../fonts/ttf/DMSans-MediumItalic.ttf") format("truetype"), url("../fonts/svg/DMSans-MediumItalic.svg#DMSans-MediumItalic") format("svg");
+        font-weight: 500;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "DM Serif Display";
+        src: url("../fonts/eot/DMSerifDisplay-Italic.eot");
+        src: url("../fonts/eot/DMSerifDisplay-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/DMSerifDisplay-Italic.woff2") format("woff2"), url("../fonts/woff/DMSerifDisplay-Italic.woff") format("woff"),
+            url("../fonts/ttf/DMSerifDisplay-Italic.ttf") format("truetype"), url("../fonts/svg/DMSerifDisplay-Italic.svg#DMSerifDisplay-Italic") format("svg");
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "DM Serif Display";
+        src: url("../fonts/eot/DMSerifDisplay-Regular.eot");
+        src: url("../fonts/eot/DMSerifDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/DMSerifDisplay-Regular.woff2") format("woff2"), url("../fonts/woff/DMSerifDisplay-Regular.woff") format("woff"),
+            url("../fonts/ttf/DMSerifDisplay-Regular.ttf") format("truetype"), url("../fonts/svg/DMSerifDisplay-Regular.svg#DMSerifDisplay-Regular") format("svg");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+}

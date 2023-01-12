@@ -64,7 +64,7 @@
         @apply text-color-2;
     }
     .counter-box + .counter-box {
-        @apply border-dashed border-l-[1px] border-color-3;
+        @apply border-dashed border-l-[1px] border-[#7a7879];
     }
     .schedule-day-wrapper {
         @apply w-full sm:w-[100px] lg:w-[162px] p-4 lg:p-7 flex justify-center items-center flex-col select-none cursor-pointer;

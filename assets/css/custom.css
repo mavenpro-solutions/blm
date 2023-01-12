@@ -775,7 +775,7 @@ a {
   border-left-width: 1px;
   border-style: dashed;
   --tw-border-opacity: 1;
-  border-color: rgb(228 225 216 / var(--tw-border-opacity));
+  border-color: rgb(122 120 121 / var(--tw-border-opacity));
 }
 
 .schedule-day-wrapper {
@@ -1329,16 +1329,12 @@ div.live-blink::before {
   background-color: rgb(191 184 166 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-80 {
-  --tw-bg-opacity: 0.8;
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
 }
 
 .bg-opacity-\[55\%\] {
   --tw-bg-opacity: 55%;
-}
-
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
 }
 
 .bg-\[url\(\'\.\.\/backgrounds\/bg_1\.png\'\)\] {
@@ -1359,6 +1355,14 @@ div.live-blink::before {
 
 .bg-center {
   background-position: center;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-no-repeat {
@@ -1572,6 +1576,14 @@ div.live-blink::before {
 @media (min-width: 640px) {
   .sm\:w-\[unset\] {
     width: unset;
+  }
+
+  .sm\:w-8 {
+    width: 2rem;
+  }
+
+  .sm\:w-5 {
+    width: 1.25rem;
   }
 
   .sm\:max-w-\[170px\] {
@@ -1811,6 +1823,11 @@ div.live-blink::before {
 
   .lg\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .lg\:text-\[19px\] {
